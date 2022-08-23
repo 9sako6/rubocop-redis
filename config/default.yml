@@ -1,0 +1,6 @@
+# This is the default configuration file.
+
+Redis/NotKeys:
+  Description: "Do not use `.keys`. It may ruin performance when it is executed against large databases. See https://redis.io/commands/keys/ for details."
+  Enabled: true
+  VersionAdded: "0.1"
