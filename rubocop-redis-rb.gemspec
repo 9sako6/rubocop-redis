@@ -13,8 +13,6 @@ Gem::Specification.new do |spec|
   spec.homepage = "https://github.com/9sako6/rubocop-redis-rb"
   spec.required_ruby_version = ">= 2.6.0"
 
-  spec.metadata["allowed_push_host"] = "https://github.com/9sako6/rubocop-redis-rb.git"
-
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/9sako6/rubocop-redis-rb"
   spec.metadata["changelog_uri"] = "https://github.com/9sako6/rubocop-redis-rb"
