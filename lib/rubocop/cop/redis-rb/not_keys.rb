@@ -2,7 +2,7 @@
 
 module RuboCop
   module Cop
-    module RedisRb
+    module Redis
       # This cop detects the use of `KEYS` query that should be noted when used in a production environment.
       class NotKeys < Base
         MSG = "Do not use `.keys`. It may ruin performance when it is executed against large databases. See https://redis.io/commands/keys/ for details."

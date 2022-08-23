@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe RuboCop::Cop::RedisRb::NotKeys, :config do
+RSpec.describe RuboCop::Cop::Redis::NotKeys, :config do
   it 'registers an offense when using `.keys`' do
     expect_offense(<<~RUBY)
       Redis.current.keys
