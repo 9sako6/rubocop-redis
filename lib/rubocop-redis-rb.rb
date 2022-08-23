@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-require_relative "redis-rb/version"
+require 'rubocop'
+require_relative "rubocop/redis-rb/version"
 
 module Rubocop
   module RedisRb
@@ -8,3 +9,5 @@ module Rubocop
     # Your code goes here...
   end
 end
+
+require_relative 'rubocop/cop/redis-rb_cops'
