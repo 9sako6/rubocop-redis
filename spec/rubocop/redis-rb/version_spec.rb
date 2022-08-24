@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-RSpec.describe Rubocop::RedisRb do
+RSpec.describe Rubocop::Redis do
   it "has a version number" do
-    expect(Rubocop::RedisRb::VERSION).not_to be nil
+    expect(Rubocop::Redis::VERSION).not_to be nil
   end
 end
