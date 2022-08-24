@@ -20,7 +20,41 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+You need to tell RuboCop to load the Redis extension. There are three
+ways to do this:
+
+### RuboCop configuration file
+
+Put this into your `.rubocop.yml`.
+
+```yaml
+require: rubocop-redis
+```
+
+Alternatively, use the following array notation when specifying multiple extensions.
+
+```yaml
+require:
+  - rubocop-other-extension
+  - rubocop-redis
+```
+
+Now you can run `rubocop` and it will automatically load the rubocop-redis
+cops together with the standard cops.
+
+### Command line
+
+```bash
+rubocop --require rubocop-redis
+```
+
+### Rake task
+
+```ruby
+RuboCop::RakeTask.new do |task|
+  task.requires << 'rubocop-redis'
+end
+```
 
 ## Contributing
 
