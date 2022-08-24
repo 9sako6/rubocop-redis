@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "rubocop-redis-rb"
+require "rubocop-redis"
 require 'rubocop/rspec/support'
 
 RSpec.configure do |config|

@@ -1,21 +1,21 @@
 # frozen_string_literal: true
 
-require_relative "lib/rubocop/redis-rb/version"
+require_relative "lib/rubocop/redis/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "rubocop-redis-rb"
-  spec.version = Rubocop::RedisRb::VERSION
+  spec.name = "rubocop-redis"
+  spec.version = Rubocop::Redis::VERSION
   spec.authors = ["9sako6"]
   spec.email = ["31821663+9sako6@users.noreply.github.com"]
 
-  spec.summary = "An extension of RuboCop for redis/redis-rb gem."
-  spec.description = "An extension of RuboCop for redis/redis-rb gem."
-  spec.homepage = "https://github.com/9sako6/rubocop-redis-rb"
+  spec.summary = "An extension of RuboCop for redis/redis gem."
+  spec.description = "An extension of RuboCop for redis/redis gem."
+  spec.homepage = "https://github.com/9sako6/rubocop-redis"
   spec.required_ruby_version = ">= 2.6.0"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/9sako6/rubocop-redis-rb"
-  spec.metadata["changelog_uri"] = "https://github.com/9sako6/rubocop-redis-rb"
+  spec.metadata["source_code_uri"] = "https://github.com/9sako6/rubocop-redis"
+  spec.metadata["changelog_uri"] = "https://github.com/9sako6/rubocop-redis"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
