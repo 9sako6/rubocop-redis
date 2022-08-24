@@ -11,6 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary = "An extension of RuboCop for redis/redis gem."
   spec.description = "An extension of RuboCop for redis/redis gem."
   spec.homepage = "https://github.com/9sako6/rubocop-redis"
+  spec.license = 'MIT'
   spec.required_ruby_version = ">= 2.6.0"
 
   spec.metadata["homepage_uri"] = spec.homepage
