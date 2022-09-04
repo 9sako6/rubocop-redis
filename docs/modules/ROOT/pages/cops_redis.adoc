@@ -1,0 +1,35 @@
+= Redis
+
+== Redis/NotKeys
+
+|===
+| Enabled by default | Safe | Supports autocorrection | Version Added | Version Changed
+
+| Enabled
+| Yes
+| No
+| 0.1
+| -
+|===
+
+This cop detects the use of `KEYS` query that should be noted when used in a production environment.
+Consider using `SCAN` query instead of `KEYS` query.
+See https://redis.io/commands/keys/ for details.
+
+=== Examples
+
+[source,ruby]
+----
+# bad
+Redis.current.keys("pattern-*")
+
+# good
+cursor = 0
+all_keys = []
+loop do
+  cursor, keys = Redis.current.scan(cursor, match: "pattern-*")
+  all_keys += keys
+  break if cursor == "0"
+end
+all_keys
+----

@@ -2,6 +2,10 @@
 
 An extension of RuboCop for [redis/redis-rb](https://github.com/redis/redis-rb) Redis client.
 
+## Documentation
+
+You can read a lot more about rubocop-redis in its [docs](docs/modules/ROOT/pages/cops_redis.adoc).
+
 ## Installation
 
 Add this line to your application's Gemfile:
