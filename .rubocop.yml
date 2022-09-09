@@ -17,3 +17,6 @@ Layout/LineLength:
 
 Naming/FileName:
   Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
