@@ -16,18 +16,23 @@ This cop detects the use of `KEYS` query that should be noted when used in a pro
 Consider using `SCAN` query instead of `KEYS` query.
 See https://redis.io/commands/keys/ for details.
 
+To avoid detecting `Hash#keys` calling, this cop adds an offense if a receiver of `keys` method is named `redis`.
+
 === Examples
 
 [source,ruby]
 ----
 # bad
-Redis.current.keys("pattern-*")
+redis.keys("pattern-*")
+
+# bad
+Redis.new.keys("pattern-*")
 
 # good
 cursor = 0
 all_keys = []
 loop do
-  cursor, keys = Redis.current.scan(cursor, match: "pattern-*")
+  cursor, keys = redis.scan(cursor, match: "pattern-*")
   all_keys += keys
   break if cursor == "0"
 end
