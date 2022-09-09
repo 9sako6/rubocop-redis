@@ -16,7 +16,7 @@ This cop detects the use of `KEYS` query that should be noted when used in a pro
 Consider using `SCAN` query instead of `KEYS` query.
 See https://redis.io/commands/keys/ for details.
 
-To avoid detecting `Hash#keys` calling, this cop adds an offense if a receiver of `keys` method is named `redis`.
+To avoid detecting `Hash#keys` calling, this cop adds an offense only if a receiver of `keys` method is named `redis`.
 
 === Examples
 
