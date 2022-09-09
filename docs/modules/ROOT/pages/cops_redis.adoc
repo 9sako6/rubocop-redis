@@ -6,7 +6,7 @@
 | Enabled by default | Safe | Supports autocorrection | Version Added | Version Changed
 
 | Enabled
-| Yes
+| No
 | No
 | 0.1
 | -
