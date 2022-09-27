@@ -5,3 +5,9 @@ Redis/NotKeys:
   Enabled: true
   VersionAdded: "0.1"
   Safe: false
+
+Redis/Setex:
+  Description: "Use `setex`"
+  Enabled: true
+  VersionAdded: "0.1"
+  Safe: true
