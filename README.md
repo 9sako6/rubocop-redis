@@ -1,5 +1,7 @@
 # rubocop-redis
 
+[![test](https://github.com/9sako6/rubocop-redis/actions/workflows/test.yml/badge.svg)](https://github.com/9sako6/rubocop-redis/actions/workflows/test.yml)
+
 An extension of RuboCop for [redis/redis-rb](https://github.com/redis/redis-rb) Redis client.
 
 ## Documentation
