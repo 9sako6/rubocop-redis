@@ -38,3 +38,32 @@ loop do
 end
 all_keys
 ----
+
+== Redis/Setex
+
+|===
+| Enabled by default | Safe | Supports autocorrection | Version Added | Version Changed
+
+| Enabled
+| Yes
+| No
+| 0.1
+| -
+|===
+
+Use `setex` method instead of calling both `set` and `expire` methods in a transaction.
+See https://redis.io/commands/setex/ for details.
+
+=== Examples
+
+[source,ruby]
+----
+# bad
+redis.multi do
+  redis.set(key, value)
+  redis.expire(key, 120)
+end
+
+# good
+redis.setex(key, 120, value)
+----
